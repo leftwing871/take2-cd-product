@@ -39,5 +39,8 @@ spec:
       - name: productpage
         image: leftwing871/book:1.0.1
         imagePullPolicy: IfNotPresent
+        env:
+        - name: CLUSTER_IP_rating
+          value: "10.100.223.228"        
         ports:
         - containerPort: 8080
