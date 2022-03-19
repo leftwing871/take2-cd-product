@@ -41,6 +41,6 @@ spec:
         imagePullPolicy: IfNotPresent
         env:
         - name: CLUSTER_IP_review
-          value: "10.100.223.208"        
+          value: "10.100.224.208"        
         ports:
         - containerPort: 8080
