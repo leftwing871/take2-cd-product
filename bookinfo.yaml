@@ -37,7 +37,7 @@ spec:
     spec:
       containers:
       - name: productpage
-        image: leftwing871/book:1.0.1
+        image: leftwing871/book:1.0.2
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
