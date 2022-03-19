@@ -8,7 +8,8 @@ phases:
       - mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$HOME/bin:$PATH
       - kubectl version --short --client
       - mkdir ~/.kube
-      - aws eks --region ap-northeast-2 update-kubeconfig --name eksworkshop-eksctl
+      - aws sts get-caller-identity
+      - aws eks update-kubeconfig --name eksworkshop-eksctl --region ap-northeast-2       
       - kubectl get po
       - kubectl get nodes
   pre_build:
