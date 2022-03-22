@@ -1,8 +1,5 @@
-{{/*
-Expand the name of the chart.
-*/}}
 {{- define "take2-product.name" -}}
-{{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
+{{- printf "%s-%s" .Values.name .Values.version }}
 {{- end }}
 
 {{/*
