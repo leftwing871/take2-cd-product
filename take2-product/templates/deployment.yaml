@@ -25,4 +25,4 @@ spec:
         - name: CLUSTER_IP_review
           value: "10.100.224.208"   
         ports:
-        - containerPort: {{ .Values.service.port }}
+        - containerPort: {{ .Values.image.containerPort }}
